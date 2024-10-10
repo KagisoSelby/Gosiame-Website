@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">               
+    <meta name="description" content="Explore our Payroll and HR services">
+    <title>Gosiame Payrolls | Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </nav>
+
+    <div id="mobileMenu" style="display: none;">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <!-- Full-width image at the top -->
+
+
+        <section>
+            <img src="images/services.jpg" alt="Our Services" class="services-image full-width">
+        </section>
+
+        <!-- Vertically aligned boxes below the image -->
+        <section id="boxes">
+            <div class="box">
+                <img src="./images/sars.jpg" width="250px">
+                <h2>Payroll Management</h2>
+                <p>
+                    Calculation of monthly payroll and taxes.<br>
+                    Generation of payslips for employees. <br>
+                    Payroll reporting.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/uif.jpg" width="250px">
+                <h2>Compliance Services</h2>
+                <p>
+                   Monthly UIF and PAYE submissions.<br>
+                    IRP5/IT3a reconciliations for tax certificates.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/bcea1997.jpg" width="250px">
+                <h2>Employee Management</h2>
+                <p>
+                    Employee leave management.<br>
+                    Assistance with employee queries and payroll disputes.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/cipc.png" width="250px">
+                <h2>Additional Compliance Services</h2>
+                <p>
+                    CIPC – New Company registration<br>
+                    SARS and UIF registration
+                </p>
+            </div>
+        </section>
+    </div>
+
+
+<div class="quote-section">
+    <button class="quote-button" onclick="window.location.href='contact.html'">Get a Free Quote</button>
+</div>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Gosiame Payrolls. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <button id="scrollBtn" onclick="scrollToTop()">Top</button>
+</body>
+</html>
+

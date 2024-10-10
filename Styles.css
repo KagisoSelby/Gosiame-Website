@@ -1,0 +1,546 @@
+/* Styling for Company Heading */
+.company-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    color: #4CAF50;  /* Change color to match your brand */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #f0f0f0; /* Light background color */
+    padding: 20px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.hero-image, .about-image, .services-image, .contact-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#scrollBtn:hover {
+    background-color: #333;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#mobileMenu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    nav a {
+        display: none;
+    }
+    #mobileMenu {
+        display: block;
+    }
+}
+
+/* Styling for About Us Section */
+
+
+/* About Us Section */
+.about-section {
+    background-color: white; /* Makes the background white */
+    padding: 30px; /* Adds padding around the section */
+    border-radius: 10px; /* Adds rounded corners to the section */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for contrast */
+    margin: 20px 0; /* Adds space above and below the section */
+}
+
+/* Aligning the content in the About Us section */
+.about-content {
+    display: flex; /* Aligns the image and text side by side */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling the logo in the About Us section */
+.about-logo {
+    max-width: 200px; /* Adjusts the image size */
+    margin-right: 30px; /* Adds space between the image and text */
+}
+
+/* About Us text styling */
+.about-text {
+    flex-grow: 1; /* Allows the text to take up remaining space */
+    color: #333; /* Text color */
+}
+
+
+
+
+.about-section {
+    display: flex;
+    align-items: center; /* Vertically aligns the logo and text */
+    margin-bottom: 30px;
+}
+
+.about-logo {
+    max-width: 250px; /* Increases the size of the logo */
+    margin-right: 20px; /* Keeps minimal space between the logo and the text */
+}
+
+.about-text {
+    flex: 1; /* Makes the text take up the remaining space */
+    max-width: 600px; /* Limits the width of the text */
+    margin-right: 40px; /* Adds space to the right of the text */
+}
+
+
+/* Core Values Section */
+.core-values {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0; /* Removes any padding */
+}
+
+.core-values li {
+    margin-bottom: 10px; /* Adds space between each list item */
+    padding-left: 20px; /* Adds space on the left for custom bullet */
+    position: relative; /* Needed for the custom bullet */
+    margin-left: 15px;
+}
+
+.core-values li::before {
+    content: "✔"; /* Custom bullet symbol (checkmark) */
+    position: absolute;
+    left: 0; /* Positions the bullet at the left of the list item */
+    color: #4CAF50; /* Bullet color (green) */
+    margin-left: 3px;
+}
+
+
+
+/* Styling for the About Section */
+
+
+.about-section {
+    margin: 20px;
+}
+
+.about-content {
+    display: flex;               /* Flexbox for horizontal alignment */
+    align-items: center;         /* Vertically center the image and text */
+}
+
+.about-image {
+    max-width: 30px;            /* Adjust image size */
+    height: auto;                /* Maintain aspect ratio */
+    margin-right: 20px;          /* Space between image and text */
+}
+
+.about-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Section - Flexbox for 50/50 Split */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align vertically */
+    flex-wrap: wrap;     /* Wrap content for smaller screens */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Contact Details (Text Part) */
+.contact-details {
+    flex: 1;                  /* Take 50% of available space */
+    max-width: 50%;
+}
+
+.contact-details h2 {
+    margin-bottom: 15px;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details ul li {
+    margin-bottom: 7px;
+}
+
+
+/* Contact Form Wrapper */
+.contact-form-wrapper {
+    margin: 0 auto;            /* Center the form */
+    max-width: 450px;           /* Set a relevant size for the form */
+    padding: 20px;              /* Padding inside the form wrapper */
+    border: 2px solid #4CAF50;  /* Green border around the form */
+    border-radius: 7px;        /* Rounded corners */
+    background-color: #f9f9f9;  /* Light background color */
+
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    flex: 1;                  /* Take 50% of available space */
+    max-width: 70%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Scroll to Top Button */
+#scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#scrollBtn:hover {
+    background-color: #333;
+}
+
+}
+
+
+
+
+
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* First Section (Introduction) */
+.intro-section {
+    padding: 20px 0;
+}
+
+/* Background Image Section - Full Width */
+.home-background {
+    background-image: url('images/payroll.jpg');  /* Replace with your actual image path */
+    background-size: cover;                      /* Ensures the image covers the entire section */
+    background-position: center center;          /* Centers the background image */
+    background-attachment: fixed;                /* Keeps background fixed while scrolling */
+    padding: 60px 0;                             /* Padding adjusted to remove side padding */
+    color: white;                                /* Text color contrast for readability */
+    min-height: 500px;                           /* Ensure the section has height */
+    display: flex;
+    align-items: center;                         /* Vertically center text */
+    justify-content: center;                     /* Horizontally center text */
+    width: 100vw;                                /* Full width of the viewport */
+    margin-left: calc(-50vw + 50%);              /* Centering full-width section */
+}
+
+/* Content Overlay */
+.content-overlay {
+    background: rgba(0, 0, 0, 0.6);              /* Transparent dark overlay for text readability */
+    padding: 40px;
+    border-radius: 10px;                         /* Optional: Rounded corners for overlay */
+    max-width: 800px;                            /* Limit content width */
+    text-align: center;                          /* Center align text */
+}
+
+.home-background h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.home-background ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.home-background ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;                   /* Footer background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Contact Us Section Styling */
+.contact-us-section {
+    background: linear-gradient(to right, #6bbcf7, #89d998);  /* Gradient background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-us-container {
+    background-color: #e0e0e0;  /* Light gray background for content */
+    padding: 30px;
+    border-radius: 10px;        /* Rounded corners */
+    max-width: 900px;
+    margin: 0 auto;             /* Center the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    opacity: 1;                 /* Set initial opacity to 1 so it's visible */
+}
+
+/* Fade-in effect for heading and paragraph */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);   /* Moves up into place */
+}
+
+/* Pop-up effect for the button */
+.pop-up {
+    opacity: 0;
+    transform: scale(0.8);     /* Initially smaller */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.pop-up.visible {
+    opacity: 1;
+    transform: scale(1);       /* Scales back to normal size */
+}
+
+/* Button Hover Style */
+.contact-btn {
+    background-color: #28a745;  /* Green background for button */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #218838;  /* Darker green on hover */
+}
+
+
+
+  .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Full-width image styling */
+        .services-image.full-width {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Adjust the value as per your desired height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+        }
+
+        /* Box styling */
+        #boxes {
+            display: flex;
+            flex-direction: column; /* Ensures vertical alignment */
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .box {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .box img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+        /* Scroll button styling */
+        #scrollBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            #boxes {
+                flex-direction: column;
+            }
+        }
+
+
+        /* Styling for the Free Quote Section */
+.quote-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.quote-button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(50px); /* Starts below its position */
+    transition: all 0.5s ease-in-out; /* Smooth transition for appearance */
+}
+
+.quote-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Animation Triggered When Scrolling */
+.quote-button.visible {
+    opacity: 1; /* Becomes fully visible */
+    transform: translateY(0); /* Moves to its normal position */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gosiame Payrolls for payroll and HR services">
+    <title>Gosiame Payrolls | Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+
+        <nav>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <div id="mobileMenu" style="display: none;">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+</nav>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+   <div class="container">
+    <section class="contact-section">
+        <div class="contact-details">
+          <img src="images/contact.jpg" alt="Contact Us Image" class="contact-image">
+            <h2>Get in Touch</h2>
+            <p>For inquiries or to learn more about how we can help with your payroll needs, please contact us:</p>
+            <ul>
+                <li>Email: <a href="mailto:Admin@gosiamepayrolls.com">Admin@gosiamepayrolls.com</a></li>
+                <li>Phone: +27 83 616 6001</li>
+                <li>Location: Centurion, South Africa</li>
+            </ul>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <!-- Contact Form with Border -->
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/xkgnwldv" method="POST" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+</div>
+
+<button id="scrollBtn" onclick="scrollToTop()">Top</button>
+
+<script src="scripts.js"></script>
+ 
+
+<footer>
+        <p>&copy; 2024 Gosiame Payrolls. All rights reserved.</p>
+    </footer>
+
+
+
+</body>
+</html>
